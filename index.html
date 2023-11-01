@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+        #game{
+            border: 2px solid #fff;
+        }
+        p{
+            background: yellow;
+            position: absolute;
+            z-index: 999;
+            color: forestgreen;
+            margin: 0;
+            padding: 0;
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        button{
+            position: absolute;
+            top: 62vh;
+        }
+        span{
+            position: absolute;
+            color: #FFF;
+            font-size: 34pt;
+            top: 15%;
+        }
+    </style>
+</head>
+<body>
+    <span id="count">000</span>
+    <canvas width="300" height="300" id="game"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
