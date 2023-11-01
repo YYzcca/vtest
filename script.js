@@ -4,7 +4,7 @@ const body = document.querySelector('body')
 const span = document.querySelector('span')
 const grid = 10
 const N = 30
-let player = {"row":25, "col":25}
+let player = {"row":15, "col":15}
 let food = {"row":10, "col":10}
 let wall = {"row":28, "col":28}
 let direction = "right"
@@ -51,7 +51,7 @@ function loop() {
         res()
     }
 
-    if (player.row > N || player.col > N|| player.col < 0 || player.row < 0){
+    if (player.row > (N - 1) || player.col > (N - 1) || player.col < 0 || player.row < 0){
         cancelAnimationFrame(rAF)
         body.insertAdjacentHTML('beforeend', shab);
         body.insertAdjacentHTML('beforeend', btn);
